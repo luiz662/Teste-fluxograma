@@ -1,0 +1,99 @@
+
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fluxograma de Autoatendimento - Máquinas e Atendimento</title>
+  <link rel="stylesheet" href="styles.css" />
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+  <main class="page">
+    <section class="header">
+      <h1>Fluxograma de Autoatendimento — Máquinas, Comercial, Suporte e Financeiro</h1>
+      <p>Fluxo proposto para triagem automática de clientes, coleta de dados essenciais, geração de protocolo e encaminhamento para retorno humano quando necessário.</p>
+    </section>
+
+    <section class="flow-wrapper">
+      <div class="card start-card">
+        <h2>1. Início do atendimento</h2>
+        <div class="step">
+          <strong>Receber cliente</strong>
+          A IA cumprimenta o cliente e identifica o motivo principal do contato.
+        </div>
+        <div class="arrow">↓</div>
+        <div class="step">
+          <strong>Classificar solicitação</strong>
+          A solicitação deve ser direcionada para uma das categorias: troca de máquina, aquisição, devolução, comercial, suporte ou financeiro.
+        </div>
+        <div class="arrow">↓</div>
+        <div class="step">
+          <strong>Coletar dados mínimos</strong>
+          Nome e telefone devem ser solicitados sempre que houver necessidade de retorno, especialmente nas áreas comercial, suporte e financeiro.
+        </div>
+      </div>
+
+      <div class="card decision-card">
+        <h2>2. Decisão por tipo de solicitação</h2>
+
+        <div class="branch exchange">
+          <h3>Cliente pede troca de máquina</h3>
+          <p>Solicitar número de patrimônio ou número serial da máquina. Enquanto aguarda, apresentar brevemente as novas soluções.</p>
+          <div class="message-box">Mensagem sugerida: “Por favor, informe o número de patrimônio ou serial da máquina. Enquanto isso, conheça nossas novas soluções.”</div>
+        </div>
+
+        <div class="branch new-machine">
+          <h3>Cliente quer máquina nova / aquisição</h3>
+          <p>Confirmar identidade do cliente. Caso não seja possível confirmar, solicitar nome completo e telefone. Em seguida, apresentar novidades e registrar interesse em proposta.</p>
+          <div class="message-box">Mensagem sugerida: “Para seguir com sua solicitação, preciso confirmar seus dados. Caso você não seja o responsável, informe nome e telefone para retorno.”</div>
+        </div>
+
+        <div class="branch return">
+          <h3>Cliente pede devolução de máquina</h3>
+          <p>Solicitar número de patrimônio ou número serial da máquina para registrar corretamente a devolução e encaminhar para agendamento.</p>
+          <div class="message-box">Mensagem sugerida: “Por favor, informe o número de patrimônio ou serial da máquina para seguirmos com a solicitação de devolução.”</div>
+        </div>
+
+        <div class="branch general">
+          <h3>Comercial, suporte ou financeiro</h3>
+          <p>Solicitar sempre nome completo e telefone. Registrar a área responsável e informar que haverá retorno do contato.</p>
+          <div class="message-box">Mensagem sugerida: “Vou registrar sua solicitação. Por favor, informe seu nome completo e telefone para que a equipe responsável retorne o contato.”</div>
+        </div>
+      </div>
+
+      <div class="card output-card">
+        <h2>3. Encaminhamento e protocolo</h2>
+        <div class="step">
+          <strong>Gerar protocolo</strong>
+          A IA deve gerar ou registrar um protocolo único para acompanhamento da solicitação. Exemplo: <span class="protocol">XXXX</span>
+        </div>
+        <div class="arrow">↓</div>
+        <div class="step">
+          <strong>Confirmar informações</strong>
+          Confirmar com o cliente os dados coletados: nome, telefone, tipo de solicitação e patrimônio/serial quando aplicável.
+        </div>
+        <div class="arrow">↓</div>
+        <div class="step">
+          <strong>Informar próximo passo</strong>
+          Para troca ou devolução: consultor entrará em contato para agendamento. Para aquisição: equipe retornará sobre proposta. Para comercial, suporte e financeiro: área responsável retornará contato.
+        </div>
+        <div class="arrow">↓</div>
+        <div class="step">
+          <strong>Finalizar atendimento</strong>
+          Agradecer o contato e reforçar o protocolo para acompanhamento.
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-grid">
+      <div class="note">
+        <strong>Observação para evolução futura:</strong> no atendimento de suporte, a IA inicialmente deve apenas registrar os dados e encaminhar. Futuramente, com uma base de conhecimento integrada, poderá oferecer tratativas técnicas antes do encaminhamento humano.
+      </div>
+      <div class="legend">
+        <strong>Legenda:</strong><br />
+        <p><span class="blue"></span>Troca de máquina &nbsp;&nbsp; <span class="orange"></span>Aquisição / proposta &nbsp;&nbsp; <span class="purple"></span>Devolução &nbsp;&nbsp; <span class="green"></span>Comercial, suporte e financeiro</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
